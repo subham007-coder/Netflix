@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>TV Shows</li>
+                <li>Movies</li>
+                <li>My List</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <button onclick="showVideo()">Watch Trailer</button>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Titles</h2>
+            <div class="movie-card" onclick="showDetails('Stranger Things')">
+                <img src="stranger-things.jpg" alt="Stranger Things">
+                <h3>Stranger Things</h3>
+            </div>
+            <!-- Add more movie/show cards as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content if needed -->
+    </footer>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideVideo()">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YaPf4q6RmrE" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideDetails()">&times;</span>
+            <h2 id="details-title"></h2>
+            <!-- Add more details as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
