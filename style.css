@@ -1,16 +1,28 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #111;
+    /* background-color: #111; */
     color: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 header {
     padding: 20px;
-    background-color: #111;
+    background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+header .logo img{
+    height: 40px;
 }
 
 nav ul {
@@ -25,10 +37,15 @@ nav ul li {
 
 .main {
     padding: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 .hero {
-    background: url('your-hero-image.jpg') center/cover no-repeat;
+    background: url('/img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
     height: 500px;
     display: flex;
     align-items: center;
