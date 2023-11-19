@@ -16,7 +16,7 @@ function hideDetails() {
 }
 
 // Close modals when clicking outside the content
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target.classList.contains('modal')) {
         event.target.style.display = 'none';
     }
